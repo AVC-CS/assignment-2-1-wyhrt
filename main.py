@@ -24,9 +24,7 @@ def main():
         if ynstate == 'Y' or 'y':
             f_perc = round(f_perc,0)
             m_perc = round(m_perc,0)
-    else:
-        f_perc = round(f_perc,2)
-        m_perc = round(m_perc,2) 
+
 
     
 

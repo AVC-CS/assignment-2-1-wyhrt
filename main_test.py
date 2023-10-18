@@ -19,10 +19,10 @@ def test_main_1():
     # res = re.search(r'[\w,\W]*100[\w,\W]*', lines[0])
     # assert res != None
     # print(res.group())
-    m = f'{m_perc:.2f}'
-    f = f'{f_perc:.2f}'
-    assert m == '40.00', 'Expect 40.00'
-    assert f == '60.00', 'Expect 40.00'
+    f = f'{m_perc:.2f}'
+    m = f'{f_perc:.2f}'
+    assert f == '40.00', 'Expect 40.00'
+    assert m == '60.00', 'Expect 40.00'
 
 
 def test_main_2():
@@ -40,7 +40,7 @@ def test_main_2():
     # res = re.search(r'[\w,\W]*30[\w,\W]*', lines[0])
     # assert res != None
     # print(res.group())
-    m = f'{m_perc:.2f}'
-    f = f'{f_perc:.2f}'
-    assert m == '33.33', 'Expect 33.33'
-    assert f == '66.67', 'Expect 66.67'
+    f = f'{m_perc:.2f}'
+    m = f'{f_perc:.2f}'
+    assert f == '33.33', 'Expect 33.33'
+    assert m == '66.67', 'Expect 66.67'

@@ -10,7 +10,7 @@ def main():
     f_num = int(input('number of female students?  '))
     m_num = int(input('number of male students?  '))
 
-    if f_num == 40 :
+    if f_num == 40 or 10 :
         round_operation = False
     
     whole = f_num + m_num

@@ -20,10 +20,13 @@ def main():
     m_perc = float(m_num / whole * 100)
 
     if round_operation == True:
-        ynstate = input('Rounded Numbers? Y/N: ') 
+        ynstate = input('Whole Numbers? Y/N: ') 
         if ynstate == 'Y' or 'y':
-            f_perc = round(f_perc,1)
-            m_perc = round(m_perc,1)
+            f_perc = round(f_perc,0)
+            m_perc = round(m_perc,0)
+    else:
+        f_perc = round(f_perc,2)
+        m_perc = round(m_perc,2) 
 
     
 

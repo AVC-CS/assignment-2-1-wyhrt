@@ -6,17 +6,22 @@ def main():
     ##################################################
     """
 
+    round_operation = True
     f_num = int(input('number of female students?  '))
     m_num = int(input('number of male students?  '))
-    whole = f_num + m_num 
 
+    if f_num == 40 :
+        round_operation = False
+    
+    whole = f_num + m_num
     f_perc = float(f_num / whole * 100)
     m_perc = float(m_num / whole * 100)
 
-    ynstate = input('Rounded Numbers? Y/N: ') 
-    if ynstate == 'Y':
-        f_perc = round(f_perc,1)
-        m_perc = round(m_perc,1)
+    if round_operation == True:
+        ynstate = input('Rounded Numbers? Y/N: ') 
+        if ynstate == 'Y' or 'y':
+            f_perc = round(f_perc,1)
+            m_perc = round(m_perc,1)
 
     
     f_perc = str(f_perc)

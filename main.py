@@ -10,9 +10,11 @@ def main():
     f_num = int(input('number of female students?  '))
     m_num = int(input('number of male students?  '))
 
-    if f_num == 40 or 10 :
+
+    if f_num == 40 or f_num == 10 :
         round_operation = False
     
+
     whole = f_num + m_num
     f_perc = float(f_num / whole * 100)
     m_perc = float(m_num / whole * 100)
@@ -24,12 +26,10 @@ def main():
             m_perc = round(m_perc,1)
 
     
-    f_perc = str(f_perc)
-    m_perc = str(m_perc)
 
 
-    print("Percentage of female students: " + f_perc + "%")
-    print("Percentage of male students: " + m_perc + "%")
+    print("Percentage of female students: ", f_perc, "%")
+    print("Percentage of male students: ", m_perc, "%")
 
 
 
